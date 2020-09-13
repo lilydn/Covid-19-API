@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- font-family: 'Quicksand', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- font-family: 'Bungee Shade', cursive; -->
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+  <!-- chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>COVID-19 Statistics App</title>
+</head>
+<body>
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<header>
+  <h1>Coronavirus Statistics</h1>
+</header>
+<div class="page-wrapper">
+  <div class="country-list-sidebar">
+    <p class="sidebar-header">By Country</p>
+    <div class="country-list"></div> 
+  </div>
+  <div class="region-list-sidebar">
+    <p class="sidebar-header">By Region</p>
+    <div class="region-list"></div>
+  </div>
+  <div class="main-display-container">
+    <div class="chart-container">
+      <canvas id="myChart"></canvas>
+    </div>
+    <div class="stats-container">
+      <div class="region-name">World:</div>
+      <div class="region-stats">
+        <div class="total-cases">
+          <p class="total-cases-number number"></p>
+          <p class="total-cases-p">Confirmed Cases</p>
+        </div>
+        <div class="total-active">
+          <p class="total-active-number number"></p>
+          <p class="total-active-p">Active Cases</p>
+        </div>
+        <div class="total-recovered">
+          <p class="total-recovered-number number"></p>
+          <p class="total-recovered-p">Recovered</p>
+        </div>
+        <div class="total-deaths">
+          <p class="total-deaths-number number"></p>
+          <p class="total-deaths-p">Deaths</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <footer></footer> -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<script src="./script.js"></script>
+</body>
+</html>
